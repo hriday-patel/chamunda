@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hriday: #114961;
+  --font-hriday: 'Roboto'
+}
