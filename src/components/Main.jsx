@@ -1,6 +1,8 @@
+import ListOfFAQ from "./ListOfFAQ";
+
 const Main = () => {
   return (
-    <main className="grow flex flex-col w-full">
+    <main className="grow w-full">
       <section className="relative w-full h-auto">
         <div className="inset-0 absolute bg-cover bg-center bg-[url('/image.jpeg')]"></div>
         <div className="inset-0 absolute bg-cover bg-center bg-black/40"></div>
@@ -17,7 +19,9 @@ const Main = () => {
           </div>
           <div className="flex justify-center items-center p-2">
             <button className="leading-normal tracking-normal text-white font-semibold bg-hriday sm:bg-transparent cursor-pointer hover:opacity-80 mt-2 px-8 py-4 rounded-lg shadow-md hover:shadow-lg hover:scale-105 duration-300 ease-linear group overflow-hidden">
-              <span className="truncate text-lg z-10 relative">Explore Our Services</span>
+              <span className="truncate text-lg z-10 relative">
+                Explore Our Services
+              </span>
               <span className="absolute inset-0 scale-0 origin-bottom-left group-hover:scale-100 bg-hriday transition-transform duration-300 ease-in-out "></span>
             </button>
           </div>
@@ -394,6 +398,28 @@ const Main = () => {
               </p>
             </div>
           </article>
+        </div>
+      </section>
+      <section className="w-full h-auto relative">
+        <div className="absolute inset-0 bg-white bg-cover bg-center"></div>
+        <div className="container mx-auto sm:p-6 p-3 relative">
+          <div className="container max-w-7xl mx-auto p-6 flex flex-col gap-[20px] justify-center items-center sm:p-3 md:p-9 lg:p-12 grow">
+            <h1 className="text-black text-center text-3xl font-bold tracking-tighter leading-none md:text-4xl lg:text-5xl font-hriday2">
+              Frequently Asked Questions
+            </h1>
+            <p className="text-slate-500 tracking-normal leading-none text-lg font-normal max-w-4xl text-center sm:text-xl">
+              Find answers to common questions that customers are eager to know.
+            </p>
+          <div className="sm:p-6 p-3">
+            <ul className="flex flex-col justify-center items-center gap-[15px] list-none flex-wrap">
+              <ListOfFAQ />
+              <ListOfFAQ />
+              <ListOfFAQ />
+              <ListOfFAQ />
+              <ListOfFAQ />
+            </ul>
+          </div>
+          </div>
         </div>
       </section>
     </main>
