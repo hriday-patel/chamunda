@@ -33,7 +33,7 @@ const Navbar = () => {
                     <motion.li onHoverStart={() => setIdx(index)} onHoverEnd={() => setIdx(null)} className="w-full text-center relative group py-2 px-4 block" key={index}>
                       <motion.a animate={{
                         color: index === idx ? 'aliceblue' : 'black'
-                      }} href={link.src} className="tracking-tight block text-md font-semibold relative z-20">{link.title}</motion.a>
+                      }} href={link.src} className="tracking-tight block text-md font-semibold relative z-20 hover:scale-105 transition-transform duration-300 linear">{link.title}</motion.a>
                      { index === idx &&  (<motion.div layoutId="hover" className="absolute bg-neutral-800 z-10 inset-0 rounded-full"></motion.div>)}
                     </motion.li>
                 ))}
